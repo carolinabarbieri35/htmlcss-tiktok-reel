@@ -18,7 +18,8 @@ video {
 }
 
 .reel-page {
-	height: 100vh; /* ti incuriosisce? */
+	height: 100vh;
+	/* ti incuriosisce? */
 	max-width: 512px;
 	min-width: 400px;
 	position: relative;
@@ -27,14 +28,50 @@ video {
 .reel-header {
 	position: absolute;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	top: 0;
 	left: 0;
 	right: 0;
 
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
+	display: flex;
+	color: #fff;
 }
+
+.reel-header a {
+	color: inherit;
+	text-decoration: none;
+
+}
+
+.play {
+	position: absolute;
+	left: 20px;
+}
+
+.seguiti {}
+
+
+.reel-header ul {
+	display: flex;
+	list-style: none;
+	gap: 10px;
+	justify-content: space-between
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer */
 
