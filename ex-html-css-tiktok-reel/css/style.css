@@ -50,14 +50,19 @@ video {
 	left: 20px;
 }
 
-.seguiti {}
+div {
+	position: absolute;
+	color: red;
+}
 
 
 .reel-header ul {
 	display: flex;
 	list-style: none;
 	gap: 10px;
-	justify-content: space-between
+	justify-content: space-between;
+
+
 }
 
 
