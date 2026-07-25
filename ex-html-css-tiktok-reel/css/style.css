@@ -50,16 +50,26 @@ video {
 	left: 20px;
 }
 
-div {
+.seguiti a {
+	position: relative;
+}
+
+.seguiti a::after {
+	content: '';
 	position: absolute;
-	color: red;
+	top: -6px;
+	right: -10px;
+	width: 6px;
+	height: 6px;
+	background-color: #fe2c55;
+	border-radius: 50%;
 }
 
 
 .reel-header ul {
 	display: flex;
 	list-style: none;
-	gap: 10px;
+	gap: 15px;
 	justify-content: space-between;
 
 
@@ -100,6 +110,13 @@ footer {
 
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
+	display: flex;
+	flex-direction: column;
+}
+
+.boolean-logo {
+	max-width: 100%;
+
 }
 
 /* ---------------------
