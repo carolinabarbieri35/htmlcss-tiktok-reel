@@ -36,18 +36,19 @@ video {
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
 	display: flex;
-	color: #fff;
+
 }
 
 .reel-header a {
-	color: inherit;
+	color: rgba(255, 255, 255, 0.6);
 	text-decoration: none;
 
 }
 
-.play {
+.reel-header .play {
 	position: absolute;
 	left: 20px;
+	color: #fff;
 }
 
 .seguiti a {
@@ -71,9 +72,14 @@ video {
 	list-style: none;
 	gap: 15px;
 	justify-content: space-between;
-
-
 }
+
+.per-te:hover {
+	color: #fff;
+	border-bottom: 2px solid white;
+	padding: 4px;
+}
+
 
 
 
@@ -103,8 +109,15 @@ footer {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 
+}
+
+footer a {
+	color: inherit;
+	text-decoration: none;
+	font-size: 19px;
+	position: relative;
 }
 
 footer div:not(.add) {
@@ -118,9 +131,77 @@ footer div:not(.add) {
 
 }
 
-a span {
-	font-size: 10px;
+span {
+	font-size: 13px;
+	color: #fff;
 }
+
+.posta {
+	position: absolute;
+	background-color: #fe2c55;
+	border: 2px solid black;
+	border-radius: 65%;
+	width: 19px;
+	height: 14px;
+	font-size: 8px;
+	text-align: center;
+	bottom: 31px;
+	right: 138px;
+
+}
+
+.add {
+	position: relative;
+	width: 45px;
+	height: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 10px;
+
+}
+
+.add::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -3px;
+	width: 100%;
+	height: 100%;
+	background-color: #25f4ee;
+	border-radius: 8px;
+	z-index: 1;
+
+}
+
+.add::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -3px;
+	width: 100%;
+	height: 100%;
+	background-color: #fe2c55;
+	border-radius: 8px;
+	z-index: 1;
+
+}
+
+.add a {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #000;
+	font-size: 20px;
+	z-index: 2;
+	text-decoration: none;
+}
+
 
 
 
@@ -239,20 +320,11 @@ a span {
 Regole per evidenziare i blocchi 
 da rimuovere una volta concluso
 --------------------- */
-.debug footer {
-	min-height: 100px;
-	border: 2px dashed #fff;
-}
 
-.debug .sidebar {
-	min-width: 80px;
-	min-height: 450px;
-	border: 2px dashed #ff0;
-}
 
-.debug .reel-header {
-	min-height: 50px;
-	border: 2px dashed #fff;
-}
+
+
+
+
 
 /* --------------------- */
